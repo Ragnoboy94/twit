@@ -64,7 +64,15 @@ class User extends Authenticatable
     {
         return $this->hasMany(
             Bookmark::class,
-             'user_id',
+            'user_id',
+        );
+    }
+
+    public function posts(): HasMany
+    {
+        return $this->hasMany(
+            Post::class,
+            'user_id'
         );
     }
 }

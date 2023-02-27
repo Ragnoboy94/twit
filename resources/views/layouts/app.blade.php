@@ -20,8 +20,8 @@
 <div class="container-fluid">
     @if(\Illuminate\Support\Facades\Auth::user())
         <div class="row">
-            <div class="col-4">
-                <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+            <div class="col-3">
+                <div class="d-flex flex-column flex-shrink-0 p-3">
                     <img
                         src="https://www.liveauctioneers.com/news/wp-content/uploads/2021/03/acn-032321-twitter-featured.jpg"
                         alt="" class="" width="64" height="64">
@@ -73,7 +73,7 @@
                     <a href="" class="btn btn-primary rounded-pill form-control">Твитнуть</a>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 {{ $slot }}
             </div>
             <div class="col-4">
